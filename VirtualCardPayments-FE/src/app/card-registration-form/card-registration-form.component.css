@@ -1,0 +1,28 @@
+.note-color
+{
+   text-decoration-color:  #363b3f !important;
+}
+.container
+{
+    margin-top: 100px;
+    position:relative;
+    /* z-index: inherit;
+
+     */
+     background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    /* background-color:  #507369d6; */
+    box-shadow: 0 0 11px 0px rgba(0, 0, 0, 0.4); 
+    border-radius: 20px;
+    border:1px solid #a5a5a5;
+}
+.required:after 
+{
+    content:" *";
+    color: red;
+}
+/* .alert{
+    padding: 5px;
+    text-align: center;
+} */

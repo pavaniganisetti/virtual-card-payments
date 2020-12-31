@@ -1,0 +1,32 @@
+<div class="container col-md-7">
+    <div>
+        <h3 class="heading">
+            Mobile-Recharge
+        </h3>
+    </div>
+    <div>
+        <form [formGroup]="mobileForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="required">Mobile number:</label>
+                        <input type="text" formControlName="number" name="number" maxlength="10" pattern="^[0-9]{10}$"
+                            placeholder="Enter Mobile number" class="form-control">
+
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="required">Amount:</label>
+                        <input type="text" pattern="^[0-9]*$" formControlName="amount" name="number"
+                            placeholder="Enter amount" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="submit" [disabled]="!mobileForm.valid" class="btn btn-md btn-info"
+                    style="width:50%; float: right; margin-bottom: 80px;">Proceed <i class="fa fa-sign-in"></i></button>
+            </div>
+        </form>
+    </div>
+</div>

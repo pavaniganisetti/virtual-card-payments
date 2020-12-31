@@ -1,0 +1,32 @@
+.container
+{
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    /* color:white; */
+    /* background-color:  #ffe2c9; */
+    /* background-color:  #369; */
+    padding: 15px;
+    box-shadow: 0 0 11px black;
+    background-color: white;
+    border-radius: 10px;
+}
+.backButton{
+    /* float: left; */
+    margin-top: 30px;
+    margin-bottom: 0px;
+    bottom: 0px;
+    width: 20%;
+    border: 1px solid black;
+}
+.heading
+{
+    color: #369;
+    font-weight: 800;
+    text-align: center;
+}
+.required:after 
+{
+    content:" *";
+    color: red;
+}

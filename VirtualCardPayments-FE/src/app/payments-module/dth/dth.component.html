@@ -1,0 +1,29 @@
+<div class="container col-md-7">
+    <div>
+        <h3 class="heading">
+            DTH/Cable
+        </h3>
+    </div>
+    <form [formGroup]="dthForm" (ngSubmit)="onDthSubmit()">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="required">Subscriber Number </label>
+                    <input required type="text" class="form-control" formControlName="number" name="number" 
+                    minlength="10" maxlength="11">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="required">Amount</label>
+                    <input type="text" formControlName="amount" name="amount" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div>
+            <button type="submit" [disabled]="!dthForm.valid " class="btn btn-info"
+                style="width: 50%;float: right;">Proceed to Pay</button>
+        </div>
+
+    </form>
+</div>

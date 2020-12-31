@@ -1,0 +1,97 @@
+<div class="container col-md-5">
+    <div class="heading">
+        <h1>Sign Up</h1>
+        <hr>
+    </div>
+
+    <div *ngIf="alertCondition" id="myDiv" class="alert alert-warning alert-dismissible ">
+        <strong>{{alertMessage}}</strong>
+        <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label class="required">First Name</label>
+            <input formControlName="firstName" type="text" class="form-control" name="firstName"
+             placeholder="Enter your first name"   [class.is-invalid]="firstName.invalid && firstName.touched" pattern="^[a-zA-Z ]*$">
+            <div *ngIf="firstName.invalid && firstName.touched">
+                <small class="text-danger" *ngIf="firstName.errors?.required">First name is required</small>
+                <small class="text-danger" *ngIf="firstName.errors?.pattern">Enter valid name</small>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label  class="required">Last Name</label>
+            <input formControlName="lastName" type="text" class="form-control" name="lastName" pattern="^[a-zA-Z ]*$"
+            placeholder="Enter your last name" [class.is-invalid]="lastName.invalid && lastName.touched">
+            <div *ngIf="lastName.invalid && lastName.touched">
+                <small class="text-danger" *ngIf="lastName.errors?.required">Last name is required</small>
+                <small class="text-danger" *ngIf="lastName.errors?.pattern">Enter valid name</small>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label  class="required">Phone Number</label>
+                    <input formControlName="phoneNumber" type="text" class="form-control" name="phoneNumber"
+                    placeholder="Phone number"    pattern="^[0-9]{10}$" [class.is-invalid]="phoneNumber.invalid && phoneNumber.touched"
+                        maxlength="10">
+                    <div *ngIf="phoneNumber.invalid && phoneNumber.touched">
+                        <small class="text-danger" *ngIf="phoneNumber.errors?.required">Phone number is required</small>
+                        <small class="text-danger" *ngIf="phoneNumber.errors?.pattern">Invalid Phone number</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label  class="required">Email</label>
+                    <input formControlName="email" type="text" class="form-control" name="email"
+                    placeholder="Email"   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        [class.is-invalid]="email.invalid && email.touched">
+                    <div *ngIf="email.invalid && email.touched">
+                        <small class="text-danger" *ngIf="email.errors?.required">Email is required</small>
+                        <small class="text-danger" *ngIf="email.errors?.pattern">Enter valid email id</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label  class="required">Password</label>
+                    <input formControlName="password" type="password" class="form-control" name="password"
+                    placeholder="Password"   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                        [class.is-invalid]="password.invalid && password.touched">
+                    <div *ngIf="password.invalid && password.touched">
+                        <small class="text-danger" *ngIf="password.errors?.required">Password is required</small>
+                        <small class="text-danger" *ngIf="password.errors?.pattern">Minimum eight characters,
+                            at least one uppercase letter, one lowercase letter, one number and one special
+                            character:</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label  class="required">Confirm password</label>
+                    <input formControlName="confirmPassword" type="password" class="form-control" name="confirmPassword"
+                    placeholder="Confirm password"    [class.is-invalid]="signUpForm.errors?.misMatch || confirmPassword.invalid && confirmPassword.touched">
+                    <div *ngIf="signUpForm.errors?.misMatch || confirmPassword.invalid && confirmPassword.touched">
+                        <small class="text-danger" *ngIf="confirmPassword.errors?.required">Confirm Password is
+                            Required</small>
+                        <small class="text-danger" *ngIf="signUpForm.errors?.misMatch">Password do not match </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div>
+            <button type="submit" [disabled]="!signUpForm.valid" class="btn btn-md btn-info"
+                style="width: 50%;">SignUp</button>
+            <div class="float-right " style="width: 45%;">Already a User ? <a [routerLink]="['/login']">Login </a></div>
+        </div>
+    </form>
+</div>

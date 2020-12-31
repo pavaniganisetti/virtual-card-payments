@@ -1,0 +1,39 @@
+.container
+{
+    margin-top: 90px;
+    width: 100%;
+    height: auto;
+    /* color:white; */
+    /* background-color:  #ffe2c9; */
+    /* background-color:  #369; */
+    background-color: white;
+    padding: 15px;
+    padding-bottom: 50px;
+    box-shadow: 0 0 11px black;
+    border-radius: 10px;
+    margin-bottom: 200px;
+}
+.heading
+{
+    color: #369;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.backButton{
+    float: left;
+    /* margin-top: 30px; */
+    /* margin-bottom: 0px; */
+    /* bottom: 0px; */
+    width: 20%;
+    border: 1px solid black;
+}
+.virtual-card-form
+{
+    margin-top: 20px;
+}
+.required:after 
+{
+    content:" *";
+    color: red;
+}

@@ -1,0 +1,73 @@
+<div class="container col-md-6">
+    <div>
+        <h3 class="heading">
+            Available cards
+        </h3>
+    </div>
+
+    <div *ngIf="alertCondition" id="myDiv" class="alert alert-warning alert-dismissible ">
+        <strong>{{alertMessage}}</strong>
+        <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    
+    <div class="card-submit-form">
+        <form [formGroup]="cardSubmitForm">
+            <label class="required">Available Cards:</label><br>
+            <div *ngIf="(userCards.length === 0)"><b>No cards Available :</b> <button class="btn btn-info" type="button"
+                    (click)="noCardsAvailable()">
+                    <i class="fa fa-sign-in"></i>Click here to register your card</button>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" *ngFor="let card of userCards; index as i;even as e;">
+                    <div class="form-group">
+                        <div class="form-control">  <!-- .substring(0,16) -->
+                            <input formControlName="cardNumber" type="radio" name="cardNumber"
+                                value={{userCards[i].card_number+userCards[i].card_id}}> {{userCards[i].card_number}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="virtual-card-form">
+        <div>
+            <h3 class="heading">
+                Virtual Card Details
+            </h3>
+        </div>
+        <form (ngSubmit)="confirmPayment()" [formGroup]="virtualCardForm">
+            <label  class="required">Virtual Card Number:</label>
+            <div class="form-group">
+                <input type="text" name="virtualCard" formControlName="virtualCard" class="form-control"
+                    value="{{virtualCardNumber}}">
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="required">Set Expiry Date:</label>
+                        <input required type="date" name="expiryDate" formControlName="expiryDate" class="form-control"
+                         [class.is-invalid]="expiryDate.invalid && expiryDate.touched">
+                         <div *ngIf = "expiryDate.invalid && expiryDate.touched ">
+                            <small class="text-danger" *ngIf="!(expiryDate.errors?.isValidDate)">Invalid Date</small>
+                         </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="required">Set Amount Limit:</label>
+                        <input type="text" pattern="[0-9]+" name="amountLimit" formControlName="amountLimit"
+                            class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="submit" [disabled]="!virtualCardForm.valid || disableProceedButton" class="btn btn-md btn-info"
+                    style="width:50%; float: right;">Proceed to Pay<i class="fa fa-sign-in"></i></button>
+                <button type="button" (click)="goPrevious()" class="btn btn-md backButton"> Back <i
+                        class="fa fa-arrow-left"></i> </button>
+            </div>
+        </form>
+    </div>
+</div>

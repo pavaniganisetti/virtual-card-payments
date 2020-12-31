@@ -1,0 +1,68 @@
+<div class="container col-md-4">
+    <div style="text-align:center; ">
+        <h2 style="font-weight: 800;">Card Details</h2>
+    </div>
+
+    <div *ngIf="alertCondition" id="myDiv" class="alert alert-warning alert-dismissible ">
+        <strong>{{alertMessage}}</strong>
+        <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+
+    <form [formGroup]="cardRegistrationForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label class="required">Card Number</label>
+            <div class="input-group">
+                <input type="text" class="form-control " name="cardNumber" placeholder="Enter Card Number"
+                    maxlength="16" formControlName="cardNumber" pattern="^[0-9]{16}$"
+                    [class.is-invalid]="cardNumber.invalid && cardNumber.touched">
+                <div class="input-group-append">
+                    <span class="input-group-text">
+                        <i class="mdi mdi-credit-card"></i>
+                    </span>
+                </div>
+            </div>
+            <div *ngIf="cardNumber.invalid && cardNumber.touched">
+                <small *ngIf="cardNumber.errors?.required" class="text-danger">Card Number is required</small>
+                <small *ngIf="cardNumber.errors?.isInValidNumber" class="text-danger">Invalid Card Number</small>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="form-group">
+                    <label class="required">Expiry date</label>
+                    <input type="text" class="form-control" name="expiryDate" formControlName="expiryDate"
+                        pattern="^(0[1-9]|1[0-2])+\/+?([0-9]{2})$" placeholder="MM/YY"
+                        [class.is-invalid]="cardRegistrationForm.errors?.isInValidDate || (expiryDate.invalid && expiryDate.touched)">
+                    <div
+                        *ngIf="cardRegistrationForm.errors?.isInValidDate || (expiryDate.invalid && expiryDate.touched)">
+                        <small *ngIf="expiryDate.errors?.required" class="text-danger"> Expiry date is required</small>
+                        <small *ngIf="expiryDate.errors?.pattern" class="text-danger">Invalid date Format</small>
+                        <small *ngIf="cardRegistrationForm.errors?.isInValidDate"
+                            class="text-danger">Invalid Date </small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="required">CVV</label>
+                    <input type="password" class="form-control" name="cvv" placeholder="Enter CVV" formControlName="cvv"
+                        maxlength="3" pattern="^[0-9]{3}$" [class.is-invalid]="cvv.invalid && cvv.touched">
+                    <div *ngIf="cvv.invalid && cvv.touched">
+                        <small *ngIf="cvv.errors?.required" class="text-danger"> CVV is required</small>
+                        <small *ngIf="cvv.errors?.pattern" class="text-danger">CVV must only contain numbers</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button type="submit" [disabled]="!cardRegistrationForm.valid" class="btn btn-md btn-info"
+                style="width: 50%;">Register</button>
+            <button type="button" [class.d-none]="_authService.isUserLogged()" class="float-right btn btn-md btn-info"
+                style="width: 45%;" [routerLink]="['/login']">Skip</button>
+        </div>
+    </form>
+</div>

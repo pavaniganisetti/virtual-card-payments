@@ -1,0 +1,51 @@
+<div class="container .justify-content-center">
+
+    <div class="row">
+        <div class="col-sm-6 transaction-heading">All Transactions</div>
+        <div class="col-sm-2 search-bar">
+            <input type="text" placeholder="Search by Date..01" [(ngModel)]="searchDay">
+        </div>
+        <div class="col-sm-2 search-bar">
+            <input type="text" placeholder="Search by Month..01" [(ngModel)]="searchMonth">
+        </div>
+        <div class="col-sm-2 search-bar">
+            <input type="text" placeholder="Search by Year..2020" [(ngModel)]="searchYear">
+        </div>
+    </div>
+    <div>
+        <table #dataTable>
+            <!-- id="payment-details" -->
+            <thead>
+                <tr>
+                    <th> Virtual Card Number</th>
+                    <th>Card Number</th>
+                    <th>Business Method</th>
+                    <th>Virtual Card Status</th>
+                    <th>Payment Status</th>
+                    <th>Payment Date</th>
+                    <th>Amount Limit</th>
+                    <th> Payment Amount</th>
+                    <th>Expiry Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- | paginate: { id:'analytics-pagination',itemsPerPage:5, currentPage:page,totalItems: totalRecords } -->
+                <tr
+                    *ngFor="let payment of paymentDetails | filterDate:searchDay | filterMonth:searchMonth | filterYear: searchYear">
+                    <td>{{payment['virtual_card_number']}}</td>
+                    <td>{{payment['card_number']}}</td>
+                    <td>{{payment['business_method']}}</td>
+                    <td>{{payment['virtual_card_status']}}</td>
+                    <td>{{payment['payment_status']}}</td>
+                    <td>{{payment['payment_date']}}</td>
+                    <td>{{payment['amount_limit']}}</td>
+                    <td>{{payment['payment_amount']}}</td>
+                    <td>{{payment['expiry_date']}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <!-- <pagination-controls id="analytics-pagination" maxSize="5" directionLinks="true" (pageChange)="page=$event"></pagination-controls> -->
+        </div>
+    </div>
+</div>

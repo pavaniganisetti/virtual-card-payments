@@ -1,0 +1,28 @@
+<div class="container col-md-7">
+    <div>
+        <h3 class="heading">
+            Payments
+        </h3>
+    </div>
+    <div class="business-form">
+        <form [formGroup]="businessForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label  class="required">Choose a Business Type:</label>
+                        <select formControlName="businessRouteAndId" name="businessRouteAndId" class="form-control">
+                            <option value="">Choose a Business</option>
+                            <option *ngFor="let biz of businessTypes; index as i" value="{{biz.business_id+biz.routeName}}">
+                                {{biz.business_method}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="submit" [disabled]="!businessForm.valid" class="btn btn-md btn-info"
+                    style="width:50%; float: right;">Proceed <i class="fa fa-sign-in"></i></button>
+            </div>
+        </form>
+    </div>
+</div>
+<router-outlet></router-outlet>
