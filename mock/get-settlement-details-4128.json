@@ -1,0 +1,55 @@
+{
+    "currencyCode3d":"USD",
+    "initiationDueDate":"03/22/2020",
+    "cutOffTime":"03/24/2020 14:00:00",
+    "status":"To be received",
+    "amount":"20594.51",
+    "virtualAccount":{
+        "accountHolderName":"US bank",
+        "accountNumber":"0334378202",
+        "issuerName":"Community Federal Savings Bank",
+        "address":{
+            "addressLine2":"",
+            "addressLine3":"",
+            "addressCity":"",
+            "addressState":"",
+            "addressZip1":"",
+            "addressZip2":""
+        },
+        "routingCodeType1":0,
+        "routingCodeType2":0,
+        "routingCodeValue1":"026073150",
+        "beneficiaryIdentificationType":0,
+        "regular":0,
+        "priority":0,
+        "fulfillerInfo":[
+
+        ]
+    },
+    "priorityAccount":{
+        "accountHolderName":"The Currency Cloud USD - Client Seg A/C",
+        "issuerName":"Barclays Bank plc",
+        "address":{
+            "addressLine1":"1 Churchill Place",
+            "addressLine3":"",
+            "addressCity":" London",
+            "addressZip1":" E14 5HP"
+        },
+        "currencyCode3d":"USD",
+        "achEligibleFlag":"no",
+        "customFields":{
+
+        },
+        "routingCodeType1":1,
+        "routingCodeType2":0,
+        "routingCodeValue1":"200605",
+        "beneficiaryIdentificationType":0,
+        "swiftBicCode":"BARCGB22",
+        "regular":0,
+        "priority":0,
+        "fulfillerInfo":[
+
+        ]
+    },
+    "id":"4128"
+}

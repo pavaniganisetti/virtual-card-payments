@@ -1,0 +1,25 @@
+{
+   "clientKey":"2566389040",
+   "clientName":"GlobalPayoutsFXManual",
+   "processorName":"Old Currency Cloud",
+   "fulfillerRefId":"46f9882c-4776-467f-90fd-0b0b80a09488",
+   "fulfillerShortRefId":"20200420-LVSCRQ",
+   "sendAmount":"1152.77",
+   "receiveAmount":"1502.37",
+   "sendCurrency":"USD",
+   "receiveCurrency":"AUD",
+   "fxRate":"1.3033",
+   "id":"3640",
+   "settlement":{
+      "id":"4139"
+   },
+   "status":"Awaiting funds",
+   "profit":"0",
+   "margin":"0",
+   "conversionDate":"04/21/2020",
+   "fulfillerCutOffTime":"04/21/2020 13:00:00",
+   "autoCancelCutOffTime":"null",
+   "settlementCreationDate":"04/20/2020",
+   "settlementInitiationDate":"04/20/2020",
+   "payoutCount":0
+}

@@ -1,0 +1,60 @@
+{
+    "homePhone":null,
+    "last_name":"LAST",
+    "middle_name":null,
+    "date_of_birth":"1994-06-12",
+    "payeeAccounts":{
+        "list":[
+            {
+                "accountHolderName":"Gpay Test",
+                "nickName":"Health Insurance Policy",
+                "accountNumber":"2609253131318192",
+                "address":{
+                    "addressLine1":"1-46/A",
+                    "addressLine2":"Indiranagar",
+                    "addressLine3":"",
+                    "addressCity":"",
+                    "addressState":"",
+                    "addressCountry":"",
+                    "addressZip1":"",
+                    "addressZip2":""
+                },
+                "payeeAccountReference":"2184335799",
+                "customFields":{
+
+                }
+            }
+        ],
+        "url":"/payees/943755/payeeaccounts"
+    },
+    "creditAccounts":{
+        "url":"/payees/943755/creditaccounts"
+    },
+    "payouts":{
+        "url":"/payees/943755/payouts"
+    },
+    "payoutSetups":{
+        "url":"/payees/943755/payoutsetups"
+    },
+    "firstName":"FIRST",
+    "lastName":"LAST",
+    "gender":"male",
+    "dateOfBirth":"1994-06-12",
+    "identityType":"Individual",
+    "address":{
+        "addressLine1":"1-46/A",
+        "addressLine2":"",
+        "addressLine3":"",
+        "addressCity":"",
+        "addressState":"",
+        "addressCountry":"",
+        "addressZip1":"",
+        "addressZip2":"1234"
+    },
+    "customFields":{
+
+    },
+    "id":"943755",
+    "url":"/payees/943755",
+    "tmpPayeeId":"39106"
+}

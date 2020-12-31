@@ -1,0 +1,47 @@
+{
+    "url":null,
+    "totalResultsCount":"1",
+    "hasMoreResults": "false",
+    "toIndex":"1",
+    "fromIndex":"1",
+    "queryId":"1099959",
+    "pageId":"1",
+    "totalPagesCount":"1",
+    "list":[
+    {
+        "payeeAccounts":{
+            "list":[
+                {
+                    "accountNumber":"723563434",
+                    "status":"active",
+                    "customFields":{
+
+                    },
+                    "id":"985433",
+                    "url":"/payeeaccounts/985433"
+                }
+            ]
+        },
+        "creditAccounts":{
+            "url":null
+        },
+        "payouts":{
+            "url":null
+        },
+        "payout_setups":{
+            "url":null
+        },
+        "firstName":"GBR1",
+        "lastName":"GBR1",
+        "address":{
+            "addressLine1":"Addr 1",
+            "addressLine3":"",
+            "addressCity":"London",
+            "addressState":"HS",
+            "addressCountry":"GBR",
+            "addressZip1":"010101"
+        },
+        "status":"active"
+    }
+]
+}

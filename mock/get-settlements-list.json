@@ -1,0 +1,119 @@
+{
+    "url":null,
+    "totalResultsCount":"12",
+    "hasMoreResults":null,
+    "toIndex":"12",
+    "fromIndex":"1",
+    "queryId":"-1",
+    "pageId":null,
+    "totalPagesCount":null,
+    "list":[
+        {
+            "currencyCode3d":"USD",
+            "initiationDueDate":"03/22/2020",
+            "cutOffTime":"03/24/2020",
+            "status":"To be received",
+            "amount":"20594.51",
+            "clientKey":"2566389040",
+            "id":"4128",
+            "creationTime":"2020-04-10 14:42:10.0"
+        },
+        {
+            "currencyCode3d":"USD",
+            "status":"Received",
+            "initiationDueDate":"03/22/2020",
+            "amount":"100.0",
+            "clientKey":"2566389040",
+            "id":"4129",
+            "creationTime":"2020-04-10 14:42:10.0"
+        },
+        {
+            "currencyCode3d":"USD",
+            "status":"To be received",
+            "initiationDueDate":"03/22/2020",
+            "amount":"101.0",
+            "clientKey":"2566389040",
+            "id":"4130",
+            "creationTime":"2020-04-10 14:42:10.0"
+        },
+        {
+            "currencyCode3d":"USD",
+            "status":"Received",
+            "amount":"1.100000058E9",
+            "clientKey":"2566389040",
+            "id":"4131",
+            "creationTime":"2020-04-10 14:42:10.0"
+        },
+        {
+            "currencyCode3d":"USD",
+            "status":"Not at created",
+            "amount":"1211.0",
+            "clientKey":"2566389040",
+            "id":"4132",
+            "creationTime":"2020-04-10 14:42:10.0"
+        },
+        {
+            "currencyCode3d":"USD",
+            "status":"To be received",
+            "initiationDueDate":"03/22/2020",
+            "amount":"1211.0",
+            "clientKey":"2566389040",
+            "id":"4133",
+            "creationTime":"2020-04-10 14:42:10.0"
+        },
+        {
+            "currencyCode3d":"USD",
+            "status":"Received",
+            "initiationDueDate":"03/22/2020",
+            "amount":"1211.0",
+            "clientKey":"2566389040",
+            "id":"4134",
+            "creationTime":"2020-04-10 14:42:10.0"
+        },
+        {
+            "currencyCode3d":"USD",
+            "status":"Received",
+            "amount":"1211.0",
+            "clientKey":"2566389040",
+            "id":"4135",
+            "creationTime":"2020-04-10 14:42:10.0"
+        },
+        {
+            "currencyCode3d":"USD",
+            "status":"To be received",
+            "initiationDueDate":"03/22/2020",
+            "amount":"1211.0",
+            "clientKey":"2566389040",
+            "id":"4136",
+            "creationTime":"2020-04-10 14:42:10.0"
+        },
+        {
+            "currencyCode3d":"USD",
+            "initiationDueDate":"04/20/2020",
+            "cutOffTime":"04/21/2020",
+            "status":"Not at created",
+            "amount":"4382.71",
+            "clientKey":"2566389040",
+            "id":"4137",
+            "creationTime":"2020-04-10 14:42:10.0"
+        },
+        {
+            "currencyCode3d":"USD",
+            "initiationDueDate":"04/20/2020",
+            "cutOffTime":"04/21/2020",
+            "status":"Received",
+            "amount":"3000.45",
+            "clientKey":"2566389040",
+            "id":"4138",
+            "creationTime":"2020-04-10 14:42:10.0"
+        },
+        {
+            "currencyCode3d":"USD",
+            "status":"To be received",
+            "amount":"2359.07",
+            "clientKey":"2566389040",
+            "id":"4141",
+            "creationTime":"2020-04-10 14:42:10.0"
+        }
+    ]
+}

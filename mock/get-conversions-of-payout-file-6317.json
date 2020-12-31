@@ -1,0 +1,57 @@
+{
+   "url":null,
+   "totalResultsCount":"2",
+   "hasMoreResults":null,
+   "toIndex":"2",
+   "fromIndex":"1",
+   "queryId":"1100103",
+   "pageId":null,
+   "totalPagesCount":null,
+   "list":[
+      {
+         "clientKey":"2566389040",
+         "clientName":"GlobalPayoutsFXManual",
+         "processorName":"0",
+         "fulfillerRefId":"46f9882c-4776-467f-90fd-0b0b80a09488",
+         "sendAmount":"1152.77",
+         "receiveAmount":"1502.37",
+         "sendCurrency":"USD",
+         "receiveCurrency":"AUD",
+         "fxRate":"1.3033",
+         "id":"3640",
+         "settlement":{
+            "id":"4139"
+         },
+         "status":"Awaiting funds",
+         "profit":"0",
+         "margin":"0",
+         "conversionDate":"04/21/2020",
+         "autoCancelCutOffTime":"null",
+         "settlementCreationDate":"04/20/2020",
+         "settlementInitiationDate":"04/20/2020",
+         "payoutCount":1
+      },
+      {
+         "clientKey":"2566389040",
+         "clientName":"GlobalPayoutsFXManual",
+         "processorName":"0",
+         "sendAmount":"1117.96",
+         "receiveAmount":"1117.96",
+         "sendCurrency":"USD",
+         "receiveCurrency":"USD",
+         "fxRate":"1.0",
+         "id":"3641",
+         "settlement":{
+            "id":"4139"
+         },
+         "status":"Awaiting funds",
+         "profit":"0",
+         "margin":"0",
+         "conversionDate":"04/21/2020",
+         "autoCancelCutOffTime":"null",
+         "settlementCreationDate":"04/20/2020",
+         "settlementInitiationDate":"04/20/2020",
+         "payoutCount":1
+      }
+   ]
+}

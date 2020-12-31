@@ -1,0 +1,25 @@
+{
+    "reason":[
+
+    ],
+    "list":[
+        {
+            "receiveAmount":"784.28",
+            "amount":"1148.34",
+            "receiveCurrency":"GBP",
+            "sendCurrency":"USD",
+            "fixedSide":"receive",
+            "conversionDate":"2020-30-26",
+            "fxRate":"1.4642"
+        },
+        {
+            "receiveAmount":"2303.62",
+            "amount":"2303.62",
+            "receiveCurrency":"USD",
+            "sendCurrency":"USD",
+            "conversionDate":"2020-30-26",
+            "fxRate":"1"
+        }
+    ],
+    "scheduledDate":"05/27/2020"
+}

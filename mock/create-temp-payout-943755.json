@@ -1,0 +1,49 @@
+{
+    "amount":"10000",
+    "creditAccount":{
+        "accountNumber":"92927492",
+        "accountSubtype":"savings",
+        "accountType":"bank",
+        "id":"985434",
+        "url":"/creditaccounts/985434",
+        "accountHolderName":"GBR1"
+    },
+    "currencyCode3d":"USD",
+    "payee":{
+        "first_name":"GBR1",
+        "firstName":"GBR1",
+        "lastName":"GBR1",
+        "address":{
+            "addressLine1":"Addr 1",
+            "addressLine3":"",
+            "addressCity":"London",
+            "addressState":"HS",
+            "addressCountry":"GBR",
+            "addressZip1":"010101"
+        },
+        "id":"943755",
+        "url":"/payees/943755"
+    },
+    "payeeAccount":{
+        "id":"985433",
+        "url":"/payeeaccounts/985433"
+    },
+    "payoutDate":"2020-05-18",
+    "payoutReference":"1111111119",
+    "payoutScheduleType":"one_time_payout",
+    "fxRate":"1.4242",
+    "receiveCurrency":"GBP",
+    "sendAmount":"14242.00",
+    "receiveAmount":"10000.00",
+    "sendCurrency":"USD",
+    "fixedSide":1,
+    "instructedCurrency":"GBP",
+    "instructedAmount":"10000.00",
+    "fxDealIssuedId":"0",
+    "paymentType":"1",
+    "processorName":"Old Currency Cloud",
+    "tmpId":161454,
+    "isPayoutRescheduled":1,
+    "isPayoutEditable":0,
+    "isPayoutCancellable":0
+}

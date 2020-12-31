@@ -1,0 +1,54 @@
+{
+    "list":[
+        {
+            "id": 1,
+            "accountName": "Alacriti India Pvt Ltd",
+            "accountNo": "xxxxxxxxxx1234",
+            "partner": "DisbursementPilot",
+            "enrollmentStatus": "Active",
+            "type": "customer"
+        },
+        {
+            "id": 2,
+            "accountName": "TCS",
+            "accountNo": "xxxxxxxxxx1236",
+            "partner": "R2FXManual",
+            "enrollmentStatus": "Active",
+            "type": "customer"
+        },
+        {
+            "id": 3,
+            "accountName": "Wipro",
+            "accountNo": "xxxxxxxxxx1235",
+            "partner": "Alacriti",
+            "enrollmentStatus": "Active",
+            "type": "customer"
+        },
+        {
+            "id": 4,
+            "accountName": "Wipro",
+            "accountNo": "xxxxxxxxxx1235",
+            "partner": "R2FXManual",
+            "enrollmentStatus": "Active",
+            "type": "customer"
+        },
+        {
+            "id": 5,
+            "accountName": "Wipro",
+            "accountNo": "xxxxxxxxxx1235",
+            "partner": "R2FXManual",
+            "enrollmentStatus": "Active",
+            "type": "customer"
+        },
+        {
+            "id": 6,
+            "accountName": "Amazon",
+            "accountNo": "xxxxxxxxxx1235",
+            "partner": "Alacriti USIB",
+            "enrollmentStatus": "Active",
+            "type": "customer"
+        }
+    ]
+}
+
+
