@@ -1,0 +1,7 @@
+1. Create a link named mock to your mock directory in your home directory
+
+cd ~/ ;  ln -s /mygitrepo/mock mock
+
+2. node server_https.js
+
+3. If the browser gives an error saying self-certification issue, copy the url and paste into browser and accept security settings. 
